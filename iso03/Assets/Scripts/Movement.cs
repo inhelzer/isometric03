@@ -49,7 +49,8 @@ public class Movement : MonoBehaviour
         }
         if(isEnding)
         {
-            Destroy(gameObject);
+            FindObjectOfType<PlayerController>().Hide();
+                
         }
        
 

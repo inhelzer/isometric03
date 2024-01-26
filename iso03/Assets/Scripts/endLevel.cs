@@ -12,6 +12,8 @@ public class endLevel : MonoBehaviour
     string currentAnimaton;
     const string idle = "idle";
     const string ending = "ending";
+    float animTime;
+    [SerializeField] float delay;
     
 
     // Start is called before the first frame update
@@ -27,6 +29,13 @@ public class endLevel : MonoBehaviour
         {
             EndAnimation();
             FindObjectOfType<Movement>().isEnding = true;
+            isActive = false;
+        }
+
+        if((isPlaying) && (Time.timeSinceLevelLoad - animTime >= delay))
+        {
+            
+            FindObjectOfType<LevelLoader>().LoadNextScene();
         }
     }
 
@@ -38,6 +47,8 @@ public class endLevel : MonoBehaviour
     public void EndAnimation()
     {
         anim.Play(ending);
+        isPlaying = true;
+        animTime = Time.timeSinceLevelLoad;
     }
 
     

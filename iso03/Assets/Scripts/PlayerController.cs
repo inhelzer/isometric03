@@ -79,4 +79,12 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<followCamera>().ChangePlayer(currentPlayer);
         FindObjectOfType<Movement>().Jump(currentEndPos);
     }
+
+    public void Hide()
+    {
+        player1.gameObject.SetActive(true);
+        player1.GetComponent<SpriteRenderer>().enabled = false;
+        player2.gameObject.SetActive(false);
+        
+    }
 }

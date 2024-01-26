@@ -251,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isPlaying: 0
+  delay: 2
 --- !u!95 &3405450736535092577
 Animator:
   serializedVersion: 5
