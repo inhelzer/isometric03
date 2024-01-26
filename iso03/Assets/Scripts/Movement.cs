@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour
     public bool isMoving = false;
     public bool isLifting = false;
     public Vector3 liftingPos;
+
+    public bool isEnding = false;
     
     
     // Start is called before the first frame update
@@ -45,6 +47,11 @@ public class Movement : MonoBehaviour
         {
             transform.position = liftingPos;
         }
+        if(isEnding)
+        {
+            Destroy(gameObject);
+        }
+       
 
     }
 
