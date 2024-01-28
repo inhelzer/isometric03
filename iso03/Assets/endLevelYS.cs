@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class endLevel : MonoBehaviour
+public class endLevelYS : MonoBehaviour
 {
     public bool isActive = false;
     public bool isPlaying = false;
 
     Animator anim;
-    
+
     string currentAnimaton;
-    const string idle = "idle";
-    const string ending = "ending";
+    const string idle = "Ysidle";
+    const string ending = "ensYS";
     float animTime;
     [SerializeField] float delay;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,7 @@ public class endLevel : MonoBehaviour
             isActive = false;
         }
 
-        if((isPlaying) && (Time.timeSinceLevelLoad - animTime >= delay))
+        if ((isPlaying) && (Time.timeSinceLevelLoad - animTime >= delay))
         {
 
             FindObjectOfType<LevelLoader>().RandNextScene();
@@ -50,6 +50,4 @@ public class endLevel : MonoBehaviour
         isPlaying = true;
         animTime = Time.timeSinceLevelLoad;
     }
-
-    
 }
