@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/yahavS.unity
+    guid: 717cee0457c4b411086a63f751f8dcea
+  - enabled: 1
     path: Assets/Scenes/inbal.unity
     guid: 20ba57d468d514298a6d1f724a96835e
   - enabled: 1
     path: Assets/Scenes/yahavH.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/yahavS.unity
-    guid: 717cee0457c4b411086a63f751f8dcea
   - enabled: 1
     path: Assets/Scenes/ofir.unity
     guid: 6613080b8c7674236b24b4ac9586f5e3

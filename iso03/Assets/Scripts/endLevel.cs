@@ -35,7 +35,8 @@ public class endLevel : MonoBehaviour
         if((isPlaying) && (Time.timeSinceLevelLoad - animTime >= delay))
         {
 
-            FindObjectOfType<LevelLoader>().RandNextScene();
+            //FindObjectOfType<LevelLoader>().RandNextScene();
+            FindObjectOfType<LevelLoaderNew>().LoadNextScene();
         }
     }
 
